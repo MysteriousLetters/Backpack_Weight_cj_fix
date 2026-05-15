@@ -8,5 +8,5 @@ In addition, due to some unknown reasons, Heavy Weapons can also be placed in ba
 They will occupy weight, and players cannot remove them. 
 This patch will recheck items and drop Heavy Weapon items in the inventory after the archive is loaded. 
 
-Finally, during you drop items and use items (such as pizza) before closing the inventory menu, the weight value displayed will change to the weight before drop the items. 
+Finally, during you drop items and use none-zero-weight items (such as pizza in Dark Future mod) before closing the inventory menu, the weight value displayed will change to the weight before drop the items. 
 I also fixed this bug. 
