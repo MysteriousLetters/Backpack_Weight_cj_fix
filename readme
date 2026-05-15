@@ -1,0 +1,12 @@
+Fix a bug on backpack weight calculate. 
+This is a problem with the original game version, not with mods, and I have successfully replicated it without mods. 
+
+This is because during initialization, the system does not calculate the weight of items with 'preview' flag. 
+However, when calculating weight changes afterwards, the official overlooked the 'preview' flag, resulting in virtual items also being counted for weight (including increase and decrease). 
+
+In addition, due to some unknown reasons, Heavy Weapons can also be placed in backpacks instead of being properly discarded. 
+They will occupy weight, and players cannot remove them. 
+This patch will recheck items and drop Heavy Weapon items in the inventory after the archive is loaded. 
+
+Finally, during you drop items and use items (such as pizza) before closing the inventory menu, the weight value displayed will change to the weight before drop the items. 
+I also fixed this bug. 
